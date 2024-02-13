@@ -1,0 +1,78 @@
+.itemsNumber2{
+	border-width: 0px;
+    width: 18px;
+    height: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #4C6579;
+}
+
+/* .cart224{ */
+	/* user-select: none; */
+	/* pointer-events: none; */
+	/* opacity: 0.5; */
+/* } */
+.js-ax-buyoneclick-button {
+    margin-top: 10px;
+    color: white;
+    display: inline-block;
+    background: #A3CF6C;
+    padding: 18px 30px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.js-ax-buyoneclick-button:hover {
+    color: #A3CF6C;
+    border: 1px solid #A3CF6C;
+    background-color: #fff;
+}
+
+.ax-buyoneclick-form .ax-buyoneclick-form-submit{
+    background: #A3CF6C;
+}
+
+
+.js-eapteca-button{
+        margin-top: 10px;
+    color: white;
+    display: inline-block;
+    background-color: #8168f0;
+    padding: 18px 30px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.js-eapteca-button:hover{
+    color: #8168f0;
+    border: 1px solid #8168f0;
+    background-color: #fff;
+}
