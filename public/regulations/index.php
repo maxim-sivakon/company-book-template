@@ -1,827 +1,207 @@
 <?
 require($_SERVER[ "DOCUMENT_ROOT" ]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новый раздел");
+$APPLICATION->SetTitle("Список регламентов");
 ?>
 
-    <div
-            class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4"
-    >
-        <div class="card shadow-none">
-            <div
-                    class="flex flex-1 flex-col justify-between rounded-lg bg-warning p-4 sm:p-5"
-            >
-                <div>
-                    <div class="flex items-start justify-between">
-                        <img
-                                class="h-12 w-12 rounded-lg object-cover object-center"
-                                src="images/800x600.png"
-                                alt="image"
-                        />
-                        <p class="text-xs+ text-amber-50">May 01, 2021</p>
-                    </div>
-                    <h3 class="mt-3 font-medium text-white line-clamp-2">
-                        Mobile App
-                    </h3>
-                    <p class="text-xs+ text-amber-50">Prototyping</p>
-                </div>
-                <div>
-                    <div class="mt-4">
-                        <p class="text-xs+ text-white">Progress</p>
-                        <div class="progress my-2 h-1.5 bg-white/30">
-                            <span class="w-8/12 rounded-full bg-white"></span>
-                        </div>
-                        <p class="text-right text-xs+ font-medium text-white">78%</p>
-                    </div>
-
-                    <div class="mt-5 flex flex-wrap -space-x-3">
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-warning"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <div
-                                    class="is-initial rounded-full border-2 border-warning bg-info text-xs+ uppercase text-white"
-                            >
-                                jd
-                            </div>
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-warning"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-warning"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between space-x-2">
-                        <div
-                                class="badge h-5.5 rounded-full bg-black/20 px-2 text-xs+ text-white"
-                        >
-                            1 week left
-                        </div>
-                        <div>
-                            <button
-                                    class="btn -mr-1.5 h-8 w-8 rounded-full p-0 text-white hover:bg-white/20 focus:bg-white/20 active:bg-white/25"
-                            >
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                >
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                    />
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-none">
-            <div
-                    class="flex flex-1 flex-col justify-between rounded-lg bg-info/15 p-4 dark:bg-transparent sm:p-5"
-            >
-                <div>
-                    <div class="flex items-start justify-between">
-                        <img
-                                class="h-12 w-12 rounded-lg object-cover object-center"
-                                src="images/800x600.png"
-                                alt="image"
-                        />
-                        <p class="text-xs+">June 04, 2021</p>
-                    </div>
-                    <h3
-                            class="mt-3 font-medium text-slate-700 line-clamp-2 dark:text-navy-100"
-                    >
-                        Design Learn Management System
-                    </h3>
-                    <p class="text-xs+">UI/UX Design</p>
-                </div>
-                <div>
-                    <div class="mt-4">
-                        <p class="text-xs+ text-slate-700 dark:text-navy-100">
-                            Progress
-                        </p>
-                        <div class="progress my-2 h-1.5 bg-info/15 dark:bg-info/25">
-                            <div class="w-4/12 rounded-full bg-info"></div>
-                        </div>
-                        <p class="text-right text-xs+ font-medium text-info">25%</p>
-                    </div>
-
-                    <div class="mt-5 flex flex-wrap -space-x-3">
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <div
-                                    class="is-initial rounded-full border-2 border-white bg-warning text-xs+ uppercase text-white dark:border-navy-700"
-                            >
-                                ii
-                            </div>
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between space-x-2">
-                        <div
-                                class="badge h-5.5 rounded-full bg-info px-2 text-xs+ text-white"
-                        >
-                            2 week left
-                        </div>
-                        <div>
-                            <button
-                                    class="btn -mr-1.5 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                            >
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                >
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                    />
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-none">
-            <div
-                    class="flex flex-1 flex-col justify-between rounded-lg bg-secondary/15 p-4 dark:bg-transparent sm:p-5"
-            >
-                <div>
-                    <div class="flex items-start justify-between">
-                        <img
-                                class="h-12 w-12 rounded-lg object-cover object-center"
-                                src="images/illustrations/chat-ui.svg"
-                                alt="image"
-                        />
-                        <p class="text-xs+">Oct 27, 2021</p>
-                    </div>
-                    <h3
-                            class="mt-3 font-medium text-slate-700 line-clamp-2 dark:text-navy-100"
-                    >
-                        Chat Mobile App
-                    </h3>
-                    <p class="text-xs+">Prototyping</p>
-                </div>
-                <div>
-                    <div class="mt-4">
-                        <p class="text-xs+ text-slate-700 dark:text-navy-100">
-                            Progress
-                        </p>
-                        <div
-                                class="progress my-2 h-1.5 bg-secondary/15 dark:bg-secondary/25"
-                        >
-                            <div class="w-6/12 rounded-full bg-secondary"></div>
-                        </div>
-                        <p class="text-right text-xs+ font-medium text-secondary">
-                            52%
-                        </p>
-                    </div>
-
-                    <div class="mt-5 flex flex-wrap -space-x-3">
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <div
-                                    class="is-initial rounded-full border-2 border-white bg-error text-xs+ uppercase text-white dark:border-navy-700"
-                            >
-                                pl
-                            </div>
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between space-x-2">
-                        <div
-                                class="badge h-5.5 rounded-full bg-secondary px-2 text-xs+ text-white"
-                        >
-                            6 week left
-                        </div>
-                        <div>
-                            <button
-                                    class="btn -mr-1.5 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                            >
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                >
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                    />
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-none">
-            <div
-                    class="flex flex-1 flex-col justify-between rounded-lg bg-success/15 p-4 dark:bg-transparent sm:p-5"
-            >
-                <div>
-                    <div class="flex items-start justify-between">
-                        <img
-                                class="h-12 w-12 rounded-lg object-cover object-center"
-                                src="images/illustrations/store-ui.svg"
-                                alt="image"
-                        />
-                        <p class="text-xs+">Sep 16, 2021</p>
-                    </div>
-                    <h3
-                            class="mt-3 font-medium text-slate-700 line-clamp-2 dark:text-navy-100"
-                    >
-                        Store Dashboard
-                    </h3>
-                    <p class="text-xs+">UI/UX Design</p>
-                </div>
-                <div>
-                    <div class="mt-4">
-                        <p class="text-xs+ text-slate-700 dark:text-navy-100">
-                            Progress
-                        </p>
-                        <div
-                                class="progress my-2 h-1.5 bg-success/15 dark:bg-success/25"
-                        >
-                            <div class="w-4/12 rounded-full bg-success"></div>
-                        </div>
-                        <p class="text-right text-xs+ font-medium text-success">
-                            33%
-                        </p>
-                    </div>
-
-                    <div class="mt-5 flex flex-wrap -space-x-3">
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <div
-                                    class="is-initial rounded-full border-2 border-white bg-success text-xs+ uppercase text-white dark:border-navy-700"
-                            >
-                                rt
-                            </div>
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between space-x-2">
-                        <div
-                                class="badge h-5.5 rounded-full bg-success px-2 text-xs+ text-white"
-                        >
-                            3 week left
-                        </div>
-                        <div>
-                            <button
-                                    class="btn -mr-1.5 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                            >
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                >
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                    />
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-none">
-            <div
-                    class="flex flex-1 flex-col justify-between rounded-lg bg-error/15 p-4 dark:bg-transparent sm:p-5"
-            >
-                <div>
-                    <div class="flex items-start justify-between">
-                        <img
-                                class="h-12 w-12 rounded-lg object-cover object-center"
-                                src="images/illustrations/nft.svg"
-                                alt="image"
-                        />
-                        <p class="text-xs+">Jan 03, 2021</p>
-                    </div>
-                    <h3
-                            class="mt-3 font-medium text-slate-700 line-clamp-2 dark:text-navy-100"
-                    >
-                        NFT Marketplace App
-                    </h3>
-                    <p class="text-xs+">Prototyping</p>
-                </div>
-                <div>
-                    <div class="mt-4">
-                        <p class="text-xs+ text-slate-700 dark:text-navy-100">
-                            Progress
-                        </p>
-                        <div class="progress my-2 h-1.5 bg-error/15 dark:bg-error/25">
-                            <div class="w-6/12 rounded-full bg-error"></div>
-                        </div>
-                        <p class="text-right text-xs+ font-medium text-error">54%</p>
-                    </div>
-
-                    <div class="mt-5 flex flex-wrap -space-x-3">
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <div
-                                    class="is-initial rounded-full border-2 border-white bg-warning text-xs+ uppercase text-white dark:border-navy-700"
-                            >
-                                ew
-                            </div>
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between space-x-2">
-                        <div
-                                class="badge h-5.5 rounded-full bg-error px-2 text-xs+ text-white"
-                        >
-                            1 week left
-                        </div>
-                        <div>
-                            <button
-                                    class="btn -mr-1.5 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                            >
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                >
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                    />
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-none">
-            <div
-                    class="flex flex-1 flex-col justify-between rounded-lg bg-primary/15 p-4 dark:bg-transparent sm:p-5"
-            >
-                <div>
-                    <div class="flex items-start justify-between">
-                        <img
-                                class="h-12 w-12 rounded-lg object-cover object-center"
-                                src="images/800x600.png"
-                                alt="image"
-                        />
-                        <p class="text-xs+">May 09, 2021</p>
-                    </div>
-                    <h3
-                            class="mt-3 font-medium text-slate-700 line-clamp-2 dark:text-navy-100"
-                    >
-                        Mobile App
-                    </h3>
-                    <p class="text-xs+">Prototyping</p>
-                </div>
-                <div>
-                    <div class="mt-4">
-                        <p class="text-xs+ text-slate-700 dark:text-navy-100">
-                            Progress
-                        </p>
-                        <div
-                                class="progress my-2 h-1.5 bg-primary/15 dark:bg-accent/25"
-                        >
-                            <div
-                                    class="w-6/12 rounded-full bg-primary dark:bg-accent"
-                            ></div>
-                        </div>
-                        <p
-                                class="text-right text-xs+ font-medium text-primary dark:text-accent-light"
-                        >
-                            52%
-                        </p>
-                    </div>
-
-                    <div class="mt-5 flex flex-wrap -space-x-3">
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <div
-                                    class="is-initial rounded-full border-2 border-white bg-info text-xs+ uppercase text-white dark:border-navy-700"
-                            >
-                                vf
-                            </div>
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between space-x-2">
-                        <div
-                                class="badge h-5.5 rounded-full bg-primary px-2 text-xs+ text-white dark:bg-accent"
-                        >
-                            3 week left
-                        </div>
-                        <div>
-                            <button
-                                    class="btn -mr-1.5 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                            >
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                >
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                    />
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-none">
-            <div
-                    class="flex flex-1 flex-col justify-between rounded-lg bg-warning/15 p-4 dark:bg-transparent sm:p-5"
-            >
-                <div>
-                    <div class="flex items-start justify-between">
-                        <img
-                                class="h-12 w-12 rounded-lg object-cover object-center"
-                                src="images/illustrations/lms-ui.svg"
-                                alt="image"
-                        />
-                        <p class="text-xs+">Jan 03, 2021</p>
-                    </div>
-                    <h3
-                            class="mt-3 font-medium text-slate-700 line-clamp-2 dark:text-navy-100"
-                    >
-                        LMS App Design
-                    </h3>
-                    <p class="text-xs+">UI/UX Design</p>
-                </div>
-                <div>
-                    <div class="mt-4">
-                        <p class="text-xs+ text-slate-700 dark:text-navy-100">
-                            Progress
-                        </p>
-                        <div
-                                class="progress my-2 h-1.5 bg-warning/15 dark:bg-warning/25"
-                        >
-                            <div class="w-9/12 rounded-full bg-warning"></div>
-                        </div>
-                        <p class="text-right text-xs+ font-medium text-warning">
-                            78%
-                        </p>
-                    </div>
-
-                    <div class="mt-5 flex flex-wrap -space-x-3">
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <div
-                                    class="is-initial rounded-full border-2 border-white bg-info text-xs+ uppercase text-white dark:border-navy-700"
-                            >
-                                po
-                            </div>
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between space-x-2">
-                        <div
-                                class="badge h-5.5 rounded-full bg-warning px-2 text-xs+ text-white"
-                        >
-                            2 week left
-                        </div>
-                        <div>
-                            <button
-                                    class="btn -mr-1.5 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                            >
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                >
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                    />
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-none">
-            <div
-                    class="flex flex-1 flex-col justify-between rounded-lg bg-info/15 p-4 dark:bg-transparent sm:p-5"
-            >
-                <div>
-                    <div class="flex items-start justify-between">
-                        <img
-                                class="h-12 w-12 rounded-lg object-cover object-center"
-                                src="images/800x600.png"
-                                alt="image"
-                        />
-                        <p class="text-xs+">June 04, 2021</p>
-                    </div>
-                    <h3
-                            class="mt-3 font-medium text-slate-700 line-clamp-2 dark:text-navy-100"
-                    >
-                        Design Learn Management System
-                    </h3>
-                    <p class="text-xs+">UI/UX Design</p>
-                </div>
-                <div>
-                    <div class="mt-4">
-                        <p class="text-xs+ text-slate-700 dark:text-navy-100">
-                            Progress
-                        </p>
-                        <div class="progress my-2 h-1.5 bg-info/15 dark:bg-info/25">
-                            <div class="w-4/12 rounded-full bg-info"></div>
-                        </div>
-                        <p class="text-right text-xs+ font-medium text-info">25%</p>
-                    </div>
-
-                    <div class="mt-5 flex flex-wrap -space-x-3">
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <div
-                                    class="is-initial rounded-full border-2 border-white bg-warning text-xs+ uppercase text-white dark:border-navy-700"
-                            >
-                                ii
-                            </div>
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-
-                        <div class="avatar h-8 w-8 hover:z-10">
-                            <img
-                                    class="rounded-full border-2 border-white dark:border-navy-700"
-                                    src="images/200x200.png"
-                                    alt="avatar"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex items-center justify-between space-x-2">
-                        <div
-                                class="badge h-5.5 rounded-full bg-info px-2 text-xs+ text-white"
-                        >
-                            2 week left
-                        </div>
-                        <div>
-                            <button
-                                    class="btn -mr-1.5 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                            >
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                >
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                    />
-                                    <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<? $APPLICATION->IncludeComponent(
+    "bitrix:catalog",
+    "regulations",
+    [
+        "ACTION_VARIABLE"                              => "action",
+        "ADD_ELEMENT_CHAIN"                            => "Y",
+        "ADD_PICT_PROP"                                => "-",
+        "ADD_PROPERTIES_TO_BASKET"                     => "N",
+        "ADD_SECTIONS_CHAIN"                           => "Y",
+        "AJAX_MODE"                                    => "N",
+        "AJAX_OPTION_ADDITIONAL"                       => "",
+        "AJAX_OPTION_HISTORY"                          => "N",
+        "AJAX_OPTION_JUMP"                             => "N",
+        "AJAX_OPTION_STYLE"                            => "N",
+        "BASKET_URL"                                   => "/personal/basket.php",
+        "BIG_DATA_RCM_TYPE"                            => "personal",
+        "CACHE_FILTER"                                 => "N",
+        "CACHE_GROUPS"                                 => "Y",
+        "CACHE_TIME"                                   => "36000000",
+        "CACHE_TYPE"                                   => "A",
+        "COMMON_ADD_TO_BASKET_ACTION"                  => "ADD",
+        "COMMON_SHOW_CLOSE_POPUP"                      => "N",
+        "COMPATIBLE_MODE"                              => "N",
+        "CONVERT_CURRENCY"                             => "N",
+        "DETAIL_ADD_DETAIL_TO_SLIDER"                  => "N",
+        "DETAIL_ADD_TO_BASKET_ACTION"                  => ["BUY"],
+        "DETAIL_ADD_TO_BASKET_ACTION_PRIMARY"          => ["BUY"],
+        "DETAIL_BACKGROUND_IMAGE"                      => "-",
+        "DETAIL_BRAND_USE"                             => "N",
+        "DETAIL_BROWSER_TITLE"                         => "-",
+        "DETAIL_CHECK_SECTION_ID_VARIABLE"             => "N",
+        "DETAIL_DETAIL_PICTURE_MODE"                   => ["POPUP", "MAGNIFIER"],
+        "DETAIL_DISPLAY_NAME"                          => "Y",
+        "DETAIL_DISPLAY_PREVIEW_TEXT_MODE"             => "E",
+        "DETAIL_IMAGE_RESOLUTION"                      => "16by9",
+        "DETAIL_MAIN_BLOCK_PROPERTY_CODE"              => [],
+        "DETAIL_META_DESCRIPTION"                      => "-",
+        "DETAIL_META_KEYWORDS"                         => "-",
+        "DETAIL_PRODUCT_INFO_BLOCK_ORDER"              => "sku,props",
+        "DETAIL_PRODUCT_PAY_BLOCK_ORDER"               => "rating,price,priceRanges,quantityLimit,quantity,buttons",
+        "DETAIL_PROPERTY_CODE"                         => ["", ""],
+        "DETAIL_SET_CANONICAL_URL"                     => "N",
+        "DETAIL_SET_VIEWED_IN_COMPONENT"               => "N",
+        "DETAIL_SHOW_POPULAR"                          => "Y",
+        "DETAIL_SHOW_SLIDER"                           => "N",
+        "DETAIL_SHOW_VIEWED"                           => "Y",
+        "DETAIL_STRICT_SECTION_CHECK"                  => "Y",
+        "DETAIL_USE_COMMENTS"                          => "N",
+        "DETAIL_USE_VOTE_RATING"                       => "N",
+        "DISABLE_INIT_JS_IN_COMPONENT"                 => "N",
+        "DISPLAY_BOTTOM_PAGER"                         => "Y",
+        "DISPLAY_TOP_PAGER"                            => "N",
+        "ELEMENT_SORT_FIELD"                           => "sort",
+        "ELEMENT_SORT_FIELD2"                          => "id",
+        "ELEMENT_SORT_ORDER"                           => "asc",
+        "ELEMENT_SORT_ORDER2"                          => "desc",
+        "FILTER_HIDE_ON_MOBILE"                        => "N",
+        "FILTER_VIEW_MODE"                             => "VERTICAL",
+        "GIFTS_DETAIL_BLOCK_TITLE"                     => "Выберите один из подарков",
+        "GIFTS_DETAIL_HIDE_BLOCK_TITLE"                => "N",
+        "GIFTS_DETAIL_PAGE_ELEMENT_COUNT"              => "4",
+        "GIFTS_DETAIL_TEXT_LABEL_GIFT"                 => "Подарок",
+        "GIFTS_MAIN_PRODUCT_DETAIL_BLOCK_TITLE"        => "Выберите один из товаров, чтобы получить подарок",
+        "GIFTS_MAIN_PRODUCT_DETAIL_HIDE_BLOCK_TITLE"   => "N",
+        "GIFTS_MAIN_PRODUCT_DETAIL_PAGE_ELEMENT_COUNT" => "4",
+        "GIFTS_MESS_BTN_BUY"                           => "Выбрать",
+        "GIFTS_SECTION_LIST_BLOCK_TITLE"               => "Подарки к товарам этого раздела",
+        "GIFTS_SECTION_LIST_HIDE_BLOCK_TITLE"          => "N",
+        "GIFTS_SECTION_LIST_PAGE_ELEMENT_COUNT"        => "4",
+        "GIFTS_SECTION_LIST_TEXT_LABEL_GIFT"           => "Подарок",
+        "GIFTS_SHOW_DISCOUNT_PERCENT"                  => "Y",
+        "GIFTS_SHOW_IMAGE"                             => "Y",
+        "GIFTS_SHOW_NAME"                              => "Y",
+        "GIFTS_SHOW_OLD_PRICE"                         => "Y",
+        "HIDE_NOT_AVAILABLE"                           => "Y",
+        "HIDE_NOT_AVAILABLE_OFFERS"                    => "Y",
+        "IBLOCK_ID"                                    => "67",
+        "IBLOCK_TYPE"                                  => "COMPANY_BOOK",
+        "INCLUDE_SUBSECTIONS"                          => "Y",
+        "INSTANT_RELOAD"                               => "N",
+        "LABEL_PROP"                                   => [],
+        "LAZY_LOAD"                                    => "N",
+        "LINE_ELEMENT_COUNT"                           => "3",
+        "LINK_ELEMENTS_URL"                            => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
+        "LINK_IBLOCK_ID"                               => "",
+        "LINK_IBLOCK_TYPE"                             => "",
+        "LINK_PROPERTY_SID"                            => "",
+        "LIST_BROWSER_TITLE"                           => "-",
+        "LIST_ENLARGE_PRODUCT"                         => "STRICT",
+        "LIST_META_DESCRIPTION"                        => "-",
+        "LIST_META_KEYWORDS"                           => "-",
+        "LIST_PRODUCT_BLOCKS_ORDER"                    => "price,props,sku,quantityLimit,quantity,buttons",
+        "LIST_PRODUCT_ROW_VARIANTS"                    => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
+        "LIST_PROPERTY_CODE"                           => ["", ""],
+        "LIST_PROPERTY_CODE_MOBILE"                    => [],
+        "LIST_SHOW_SLIDER"                             => "N",
+        "LIST_SLIDER_INTERVAL"                         => "3000",
+        "LIST_SLIDER_PROGRESS"                         => "N",
+        "LOAD_ON_SCROLL"                               => "N",
+        "MESSAGE_404"                                  => "",
+        "MESS_BTN_ADD_TO_BASKET"                       => "В корзину",
+        "MESS_BTN_BUY"                                 => "Купить",
+        "MESS_BTN_COMPARE"                             => "Сравнение",
+        "MESS_BTN_DETAIL"                              => "Подробнее",
+        "MESS_BTN_LAZY_LOAD"                           => "Показать ещё",
+        "MESS_BTN_SUBSCRIBE"                           => "Подписаться",
+        "MESS_COMMENTS_TAB"                            => "Комментарии",
+        "MESS_DESCRIPTION_TAB"                         => "Описание",
+        "MESS_NOT_AVAILABLE"                           => "Нет в наличии",
+        "MESS_NOT_AVAILABLE_SERVICE"                   => "Недоступно",
+        "MESS_PRICE_RANGES_TITLE"                      => "Цены",
+        "MESS_PROPERTIES_TAB"                          => "Характеристики",
+        "PAGER_BASE_LINK_ENABLE"                       => "N",
+        "PAGER_DESC_NUMBERING"                         => "N",
+        "PAGER_DESC_NUMBERING_CACHE_TIME"              => "36000",
+        "PAGER_SHOW_ALL"                               => "N",
+        "PAGER_SHOW_ALWAYS"                            => "N",
+        "PAGER_TEMPLATE"                               => ".default",
+        "PAGER_TITLE"                                  => "Товары",
+        "PAGE_ELEMENT_COUNT"                           => "30",
+        "PARTIAL_PRODUCT_PROPERTIES"                   => "N",
+        "PRICE_CODE"                                   => [],
+        "PRICE_VAT_INCLUDE"                            => "N",
+        "PRICE_VAT_SHOW_VALUE"                         => "N",
+        "PRODUCT_ID_VARIABLE"                          => "id",
+        "PRODUCT_PROPERTIES"                           => [""],
+        "PRODUCT_PROPS_VARIABLE"                       => "prop",
+        "PRODUCT_QUANTITY_VARIABLE"                    => "quantity",
+        "PRODUCT_SUBSCRIPTION"                         => "N",
+        "SEARCH_CHECK_DATES"                           => "Y",
+        "SEARCH_NO_WORD_LOGIC"                         => "Y",
+        "SEARCH_PAGE_RESULT_COUNT"                     => "50",
+        "SEARCH_RESTART"                               => "N",
+        "SEARCH_USE_LANGUAGE_GUESS"                    => "Y",
+        "SEARCH_USE_SEARCH_RESULT_ORDER"               => "N",
+        "SECTIONS_SHOW_PARENT_NAME"                    => "Y",
+        "SECTIONS_VIEW_MODE"                           => "LIST",
+        "SECTION_ADD_TO_BASKET_ACTION"                 => "ADD",
+        "SECTION_BACKGROUND_IMAGE"                     => "-",
+        "SECTION_COUNT_ELEMENTS"                       => "Y",
+        "SECTION_ID_VARIABLE"                          => "SECTION_ID",
+        "SECTION_TOP_DEPTH"                            => "2",
+        "SEF_FOLDER"                                   => "/regulations/",
+        "SEF_MODE"                                     => "Y",
+        "SEF_URL_TEMPLATES"                            => [
+            "element"      => "#SECTION_CODE#/#ELEMENT_ID#/",
+            "section"      => "#SECTION_CODE#/",
+            "sections"     => "",
+            "smart_filter" => "#SECTION_CODE#/filter/#SMART_FILTER_PATH#/apply/"
+        ],
+        "SET_LAST_MODIFIED"                            => "N",
+        "SET_STATUS_404"                               => "Y",
+        "SET_TITLE"                                    => "Y",
+        "SHOW_404"                                     => "N",
+        "SHOW_DEACTIVATED"                             => "N",
+        "SHOW_DISCOUNT_PERCENT"                        => "N",
+        "SHOW_MAX_QUANTITY"                            => "N",
+        "SHOW_OLD_PRICE"                               => "N",
+        "SHOW_PRICE_COUNT"                             => "1",
+        "SHOW_SKU_DESCRIPTION"                         => "N",
+        "SHOW_TOP_ELEMENTS"                            => "N",
+        "SIDEBAR_DETAIL_SHOW"                          => "N",
+        "SIDEBAR_PATH"                                 => "",
+        "SIDEBAR_SECTION_SHOW"                         => "Y",
+        "TEMPLATE_THEME"                               => "blue",
+        "TOP_ADD_TO_BASKET_ACTION"                     => "ADD",
+        "TOP_ELEMENT_COUNT"                            => "9",
+        "TOP_ELEMENT_SORT_FIELD"                       => "sort",
+        "TOP_ELEMENT_SORT_FIELD2"                      => "id",
+        "TOP_ELEMENT_SORT_ORDER"                       => "asc",
+        "TOP_ELEMENT_SORT_ORDER2"                      => "desc",
+        "TOP_ENLARGE_PRODUCT"                          => "STRICT",
+        "TOP_LINE_ELEMENT_COUNT"                       => "3",
+        "TOP_PRODUCT_BLOCKS_ORDER"                     => "price,props,sku,quantityLimit,quantity,buttons",
+        "TOP_PRODUCT_ROW_VARIANTS"                     => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
+        "TOP_PROPERTY_CODE"                            => ["", ""],
+        "TOP_PROPERTY_CODE_MOBILE"                     => [],
+        "TOP_SHOW_SLIDER"                              => "Y",
+        "TOP_SLIDER_INTERVAL"                          => "3000",
+        "TOP_SLIDER_PROGRESS"                          => "N",
+        "TOP_VIEW_MODE"                                => "SECTION",
+        "USER_CONSENT"                                 => "N",
+        "USER_CONSENT_ID"                              => "0",
+        "USER_CONSENT_IS_CHECKED"                      => "Y",
+        "USER_CONSENT_IS_LOADED"                       => "N",
+        "USE_BIG_DATA"                                 => "N",
+        "USE_COMMON_SETTINGS_BASKET_POPUP"             => "N",
+        "USE_COMPARE"                                  => "N",
+        "USE_ELEMENT_COUNTER"                          => "Y",
+        "USE_ENHANCED_ECOMMERCE"                       => "N",
+        "USE_FILTER"                                   => "N",
+        "USE_GIFTS_DETAIL"                             => "N",
+        "USE_GIFTS_MAIN_PR_SECTION_LIST"               => "N",
+        "USE_GIFTS_SECTION"                            => "N",
+        "USE_MAIN_ELEMENT_SECTION"                     => "N",
+        "USE_PRICE_COUNT"                              => "N",
+        "USE_PRODUCT_QUANTITY"                         => "N",
+        "USE_SALE_BESTSELLERS"                         => "Y",
+        "USE_STORE"                                    => "N"
+    ]
+); ?>
 <? require($_SERVER[ "DOCUMENT_ROOT" ]."/bitrix/footer.php"); ?>
